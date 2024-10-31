@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم لغات البرمجة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown {
+            float: right;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            cursor: pointer;
+            padding: 14px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+		.container h2{
+		text-align: center;
+		}
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+		/* استعلامات الوسائط لتحسين التوافق */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar a {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                margin: 5px 0;
+            }
+            .container {
+                padding: 1rem; /* تقليل الحشوة على الشاشات الصغيرة */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-container {
+                margin: 1rem 0;
+            }
+            h1, h2 {
+                font-size: 1.5rem; /* تقليل حجم الخط العناوين */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>كود اكاديمي</h1>
+    </header>
+
+    <!-- شريط التنقل -->
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">اللغات</button>
+            <div class="dropdown-content">
+                <a href="index2.html">HTML</a>
+                <a href="css_lesson.html">CSS</a>
+                <a href="javascript_lesson.html">JavaScript</a>
+                <a href="python_lesson.html">Python</a>
+                <a href="java_lesson.html">Java</a>
+            </div>
+        </div>
+        <a href="index.html">الرئيسية</a>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <h2>من نحن</h2>
+        <video controls>
+            <source src="C:\Users\amroa\Desktop\كود اكاديمي\vedio\intro.mp4" type="video/mp4">
+            متصفحك لا يدعم فيديو HTML5
+        </video>
+        <p></p>
+    </div>
+
+</body>
+</html>
